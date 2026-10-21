@@ -1,0 +1,6 @@
+url: https://github.com/hjfkj/dsh-xiangqi
+name: hjfkj/dsh-xiangqi
+category: fun
+description:
+  en: Chinese chess and jieqi (revealed chess) for DSH Web, with a quiescence-search engine, opening book, per-move coach review, review curve, synthesized audio and an offline chat. Runs entirely local.
+  zh: DSH Web 的中国象棋 / 揭棋插件：带静止搜索的引擎、开局定式库、每手教练点评、复盘曲线、合成音效与本地聊天，全部离线运行。

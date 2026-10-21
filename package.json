@@ -1,0 +1,59 @@
+{
+  "name": "dsh-xiangqi",
+  "version": "0.1.0",
+  "description": "Chinese chess / jieqi for DeepSeek Harness Web. 中国象棋 / 揭棋插件：引擎、开局库、教练点评、复盘曲线、合成音效，纯本地运行。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "game",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.2.1-rc.2"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-renderer"
+      ],
+      "platform": "web"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.2.1-rc.2",
+    "react": "^18.2.0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "dsh",
+    "xiangqi",
+    "chinese-chess",
+    "jieqi",
+    "game"
+  ],
+  "author": "hjfkj",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjfkj/dsh-xiangqi.git"
+  },
+  "homepage": "https://github.com/hjfkj/dsh-xiangqi#readme",
+  "bugs": {
+    "url": "https://github.com/hjfkj/dsh-xiangqi/issues"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.cjs"
+  }
+}

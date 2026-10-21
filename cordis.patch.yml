@@ -1,0 +1,4 @@
+# dsh-xiangqi bundle patch: inserts its client row into the web plugin roster.
+- insert:
+    - id: ui-xiangqi
+      name: 'dsh-xiangqi'
